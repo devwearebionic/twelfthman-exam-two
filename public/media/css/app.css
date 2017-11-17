@@ -1,0 +1,86 @@
+.header-container {
+	padding: 50px 0px 30px;
+}
+
+.content-container {
+	padding: 50px 0px;
+	background: #EEE;
+}
+
+.distance {
+	margin-bottom: 30px;
+}
+
+
+.image-pane.selected {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.image-pane { 
+	display: block;
+	margin-bottom: 30px;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+	padding: 5px;
+	background: #FFF;
+	-webkit-transition: box-shadow 300ms ease;
+	-moz-transition: box-shadow 300ms ease;
+	-ms-transition: box-shadow 300ms ease;
+	-o-transition: box-shadow 300ms ease;
+	transition: box-shadow 300ms ease;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image-pane img { 
+	width: 100%;
+
+
+}
+
+.image-pane span { 
+	display: inline-block; 
+	padding: 5px;
+}
+
+.gallery-actions {
+	background: #4F587D;
+	text-align: center;
+	position: fixed;
+	z-index: 9999;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	padding: 20px;
+	transform: translateY(100%);
+	-webkit-transition: transform 300ms ease;
+	-moz-transition: transform 300ms ease;
+	-ms-transition: transform 300ms ease;
+	-o-transition: transform 300ms ease;
+	transition: transform 300ms ease;
+}
+
+.gallery-actions.active {
+	transform: translateY(0%);
+}
+
+
+.gallery-actions a {
+	-webkit-transition: color 300ms ease;
+	-moz-transition: color 300ms ease;
+	-ms-transition: color 300ms ease;
+	-o-transition: color 300ms ease;
+	transition: color 300ms ease;
+	color: #CCC;
+	margin: 0px 5px;
+}
+
+.gallery-actions a:hover {
+	color: #FFF;
+}
+
+
+.clickable {
+	cursor: pointer;
+}

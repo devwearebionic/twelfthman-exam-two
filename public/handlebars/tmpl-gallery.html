@@ -1,0 +1,33 @@
+
+
+<div class="header-container">
+	<div class="container">
+		<h1>My Library</h1> 
+		<form method="post" action="{{url}}/api/v1/gallery/upload" class="livepost uploadform">
+			<input type="file" name="image" class="submitchange" />
+		</form>
+	</div>	
+</div>
+
+<div class="content-container">
+	<div class="container">
+
+
+		<div class="row">
+			<div class="col-sm-12">
+
+				<div class="btn-group distance float-right">
+				  <a href="{{url}}/gallery/active" data-push-state class="btn btn-secondary active">Active</a>
+				  <a href="{{url}}/gallery/deleted" data-push-state class="btn btn-secondary">Deleted</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="gallery-list">
+
+		</div>
+
+		<div class="loadmore"></div>
+
+	</div>
+</div>

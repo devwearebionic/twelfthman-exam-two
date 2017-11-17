@@ -1,0 +1,14 @@
+{{#each result}}
+<div class="col-md-3 text-center">
+	<a data-action="{{status}}" data-target=".gallery-action-{{id}}" href="javascript:void(0);" class="image-pane" >
+		<img data-src="{{thumbnail}}" src="{{url}}/uploads/placeholder.jpg" alt="">
+		<span>{{name}}</span>
+	</a>
+
+	<div class="gallery-actions gallery-action-{{id}}">
+	{{#each actions}} 
+	<a data-method="{{method}}" data-title="{{label}}" data-confirm="{{confirm}}" {{#if confirm}} data-question="{{question}}"{{/if}} href="{{api}}"><i class="fa {{icon}}"></i></a>
+	{{/each}}
+	</div>
+</div>
+{{/each}}
